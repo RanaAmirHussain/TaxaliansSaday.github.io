@@ -149,7 +149,7 @@
                             }]), i
                         }(), r(document).on(_.CLICK_DATA_API, '[data-dismiss="alert"]', T._handleDismiss(new T)), r.fn[n] = T._jQueryInterface, r.fn[n].Constructor = T, r.fn[n].noConflict = function() {
                             return r.fn[n] = b, T._jQueryInterface
-                        }, T), ke = (N = "." + (S = "bs.button"), A = (o = t).fn[C = "button"], k = "active", I = "btn", L = '[data-toggle^="button"]', j = '[data-toggle="buttons"]', H = "input", P = ".active", M = ".btn", F = {
+                        }, T), ke = (N = "." + (S = "bs.button"), A = (o = t).fn[C = "button"], k = "active", I = "btn", L = '[data-bs-toggle^="button"]', j = '[data-bs-toggle="buttons"]', H = "input", P = ".active", M = ".btn", F = {
                             CLICK_DATA_API: "click" + N + (D = ".data-api"),
                             FOCUS_BLUR_DATA_API: (O = "focus") + N + D + " blur" + N + D
                         }, q = function() {
@@ -380,9 +380,9 @@
                             HIDE: "hide" + me,
                             HIDDEN: "hidden" + me,
                             CLICK_DATA_API: "click" + me + ".data-api"
-                        }, _e = "show", we = "collapse", Ee = "collapsing", xe = "collapsed", Te = "width", Ce = "height", Se = ".show, .collapsing", Ne = '[data-toggle="collapse"]', De = function() {
+                        }, _e = "show", we = "collapse", Ee = "collapsing", xe = "collapsed", Te = "width", Ce = "height", Se = ".show, .collapsing", Ne = '[data-bs-toggle="collapse"]', De = function() {
                             function a(t, e) {
-                                this._isTransitioning = !1, this._element = t, this._config = this._getConfig(e), this._triggerArray = l.makeArray(document.querySelectorAll('[data-toggle="collapse"][href="#' + t.id + '"],[data-toggle="collapse"][data-target="#' + t.id + '"]'));
+                                this._isTransitioning = !1, this._element = t, this._config = this._getConfig(e), this._triggerArray = l.makeArray(document.querySelectorAll('[data-bs-toggle="collapse"][href="#' + t.id + '"],[data-bs-toggle="collapse"][data-target="#' + t.id + '"]'));
                                 for (var n = [].slice.call(document.querySelectorAll(Ne)), i = 0, r = n.length; i < r; i++) {
                                     var o = n[i],
                                         s = p.getSelectorFromElement(o),
@@ -447,7 +447,7 @@
                                 var n = this,
                                     e = null;
                                 p.isElement(this._config.parent) ? (e = this._config.parent, "undefined" != typeof this._config.parent.jquery && (e = this._config.parent[0])) : e = document.querySelector(this._config.parent);
-                                var t = '[data-toggle="collapse"][data-parent="' + this._config.parent + '"]',
+                                var t = '[data-bs-toggle="collapse"][data-parent="' + this._config.parent + '"]',
                                     i = [].slice.call(e.querySelectorAll(t));
                                 return l(i).each(function(e, t) {
                                     n._addAriaAndCollapsedClass(a._getTargetFromElement(t), [t])
@@ -1314,7 +1314,7 @@
                             CLICK_DATA_API: "click" + Ot + Lt,
                             KEYDOWN_DATA_API: "keydown" + Ot + Lt,
                             KEYUP_DATA_API: "keyup" + Ot + Lt
-                        }, Mt = "disabled", Ft = "show", qt = "dropup", Wt = "dropright", Rt = "dropleft", Bt = "dropdown-menu-right", Ut = "position-static", $t = '[data-toggle="dropdown"]', zt = ".dropdown form", Kt = ".dropdown-menu", Qt = ".navbar-nav", Yt = ".dropdown-menu .dropdown-item:not(.disabled):not(:disabled)", Vt = "top-start", Xt = "top-end", Jt = "bottom-start", Gt = "bottom-end", Zt = "right-start", en = "left-start", tn = {
+                        }, Mt = "disabled", Ft = "show", qt = "dropup", Wt = "dropright", Rt = "dropleft", Bt = "dropdown-menu-right", Ut = "position-static", $t = '[data-bs-toggle="dropdown"]', zt = ".dropdown form", Kt = ".dropdown-menu", Qt = ".navbar-nav", Yt = ".dropdown-menu .dropdown-item:not(.disabled):not(:disabled)", Vt = "top-start", Xt = "top-end", Jt = "bottom-start", Gt = "bottom-end", Zt = "right-start", en = "left-start", tn = {
                             offset: 0,
                             flip: !0,
                             boundary: "scrollParent",
@@ -1484,7 +1484,7 @@
                             MOUSEUP_DISMISS: "mouseup.dismiss" + an,
                             MOUSEDOWN_DISMISS: "mousedown.dismiss" + an,
                             CLICK_DATA_API: "click" + an + ".data-api"
-                        }, fn = "modal-scrollbar-measure", dn = "modal-backdrop", hn = "modal-open", pn = "fade", mn = "show", gn = ".modal-dialog", vn = '[data-toggle="modal"]', yn = '[data-dismiss="modal"]', bn = ".fixed-top, .fixed-bottom, .is-fixed, .sticky-top", _n = ".sticky-top", wn = function() {
+                        }, fn = "modal-scrollbar-measure", dn = "modal-backdrop", hn = "modal-open", pn = "fade", mn = "show", gn = ".modal-dialog", vn = '[data-bs-toggle="modal"]', yn = '[data-dismiss="modal"]', bn = ".fixed-top, .fixed-bottom, .is-fixed, .sticky-top", _n = ".sticky-top", wn = function() {
                             function r(e, t) {
                                 this._config = this._getConfig(t), this._element = e, this._dialog = e.querySelector(gn), this._backdrop = null, this._isShown = !1, this._isBodyOverflowing = !1, this._ignoreBackdropClick = !1, this._scrollbarWidth = 0
                             }
@@ -2121,7 +2121,7 @@
                             SHOW: "show" + Si,
                             SHOWN: "shown" + Si,
                             CLICK_DATA_API: "click" + Si + ".data-api"
-                        }, Ai = "dropdown-menu", ki = "active", Ii = "disabled", Oi = "fade", Li = "show", ji = ".dropdown", Hi = ".nav, .list-group", Pi = ".active", Mi = "> li > .active", Fi = '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]', qi = ".dropdown-toggle", Wi = "> .dropdown-menu .active", Ri = function() {
+                        }, Ai = "dropdown-menu", ki = "active", Ii = "disabled", Oi = "fade", Li = "show", ji = ".dropdown", Hi = ".nav, .list-group", Pi = ".active", Mi = "> li > .active", Fi = '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]', qi = ".dropdown-toggle", Wi = "> .dropdown-menu .active", Ri = function() {
                             function i(e) {
                                 this._element = e
                             }
